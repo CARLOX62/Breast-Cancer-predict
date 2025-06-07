@@ -116,7 +116,7 @@ streamlit run app.py
 
 
 
-## 🌐 Live Demo (Optional)
+## 🌐 Live Demo 
 
 
 ```markdown
