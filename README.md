@@ -1,6 +1,6 @@
 # 🧬 Breast Cancer Prediction App
 
-A Streamlit-based web app for predicting breast cancer (Malignant or Benign) using diagnostic features of cell nuclei. This app utilizes a machine learning model trained on the Breast Cancer Wisconsin Diagnostic Dataset.
+A **Streamlit-based** web app for predicting **Breast Cancer** (Malignant or Benign) using diagnostic features of cell nuclei. This app utilizes a machine learning model trained on the Breast Cancer Wisconsin Diagnostic Dataset.
 
 <p align="center">
   <img src="https://img.shields.io/github/languages/top/CARLOX62/Breast-Cancer-predict" alt="Top Language">
@@ -10,9 +10,15 @@ A Streamlit-based web app for predicting breast cancer (Malignant or Benign) usi
 
 ---
 
+## 🚀 Live Demo
+
+🔗 **Live App**: (http://localhost:8501/)  
+
+---
+
 ## 📂 Repository Contents
 
-```bash
+```
 .
 ├── app.py                         # Streamlit frontend
 ├── Breast Cancer.ipynb           # Model training, EDA, and evaluation
@@ -30,18 +36,22 @@ This project helps identify the likelihood of breast cancer based on patient-spe
 - **0 → Benign**
 - **1 → Malignant**
 
-Built with `Python`, `scikit-learn`, and `Streamlit`, it enables real-time predictions from a simple web interface.
+Built using:
+- 🐍 Python
+- 🧪 scikit-learn
+- 🌐 Streamlit
+
+It enables real-time predictions from a simple web interface.
 
 ---
 
 ## 📊 Dataset Details
 
-- **Name**: Breast Cancer Wisconsin (Diagnostic) Dataset
-- **Source**: [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+(Diagnostic))
-- **Features**: 30 numeric values including:
-  - mean radius, texture, smoothness, concavity, symmetry, etc.
-- **Samples**: 569
-- **Target classes**:
+- **Name**: Breast Cancer Wisconsin (Diagnostic) Dataset  
+- **Source**: [UCI ML Repository](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+(Diagnostic))  
+- **Features**: 30 numeric values (e.g., mean radius, texture, smoothness, symmetry)  
+- **Samples**: 569  
+- **Target Classes**:
   - `M` = Malignant
   - `B` = Benign (converted to 1 and 0)
 
@@ -58,13 +68,13 @@ cd Breast-Cancer-predict
 
 ### 2️⃣ Install Requirements
 
-You can install required packages manually:
+Install required packages:
 
 ```bash
 pip install streamlit pandas numpy scikit-learn matplotlib seaborn
 ```
 
-Or generate a `requirements.txt`:
+Or use a `requirements.txt`:
 
 ```bash
 pip freeze > requirements.txt
@@ -77,24 +87,25 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
+Then open your browser and go to:  
+`http://localhost:8501/`
+
 ---
 
 ## 🧪 How It Works
 
 - The model was trained and evaluated inside the `Breast Cancer.ipynb` notebook.
-- The final model was saved as `breast_cancer_detector.pickle`.
-- The app (`app.py`) loads this model and takes 30 feature inputs from the user.
-- Based on the inputs, it displays:
-  - ✅ "No Breast Cancer (Benign)"
-  - ⚠️ "Breast Cancer Detected (Malignant)"
+- Final model saved as `breast_cancer_detector.pickle`.
+- The app (`app.py`) loads the model and accepts 30 features as user input.
+- Based on the prediction, it displays:
+  - ✅ **No Breast Cancer (Benign)**
+  - ⚠️ **Breast Cancer Detected (Malignant)**
 
 ---
 
-## 📷 Screenshots
+## 📸 Screenshot
 
-![Screenshot (47)](https://github.com/user-attachments/assets/51f2b83f-6f67-4a0f-9ded-fbbd600b5c0d)
-
-
+![Screenshot (58)](https://github.com/user-attachments/assets/e3281cb8-129c-4629-9fce-e5844259b906)
 
 
 ---
@@ -102,8 +113,8 @@ streamlit run app.py
 ## 📌 Notes
 
 - This app is for **educational/demo purposes only**.
-- It is **not** a replacement for professional medical diagnosis.
-- Always consult a healthcare provider for medical advice.
+- It is **not a replacement for medical diagnosis**.
+- Please consult a doctor for actual health concerns.
 
 ---
 
@@ -113,12 +124,3 @@ streamlit run app.py
 [GitHub Profile](https://github.com/CARLOX62)
 
 ---
-
-
-
-## 🌐 Live Demo 
-
-
-```markdown
-🔗 Live App: [Click Here](http://localhost:8501/)
-```
